@@ -1,0 +1,78 @@
+%----------------------------------preamble ----------------------------------
+\documentclass[10pt,compress]{beamer}
+\usetheme{Madrid}
+
+\definecolor{orange}{RGB}{189, 88, 44} 
+\definecolor{navbar}{RGB}{160,75,50}
+\definecolor{lorange}{RGB}{228,131,18}
+\definecolor{background}{RGB}{250,230,210}
+
+\usecolortheme[named=orange]{structure}
+\useoutertheme[subsection=false]{miniframes}
+\setbeamertemplate{navigation symbols}{}
+%\setbeamerfont{structure}{family=\rmfamily,series=\bfseries}
+\setbeamercolor{normal text}{bg=background}
+\setbeamercolor{palette quaternary}{bg=navbar,fg=white}
+%\usefonttheme[stillsansseriftext]{serif}
+
+\usepackage{amsmath}
+\usepackage{graphicx,comment}
+\usepackage[english]{babel}
+%\usepackage{rotating}
+\usepackage{hyperref}
+\usepackage{enumerate}
+%\usepackage{tikz}
+\usepackage{bm}
+\usepackage{helvet}
+\usepackage{multicol}
+\usepackage{subfiles}
+\usepackage{multirow}
+
+%-------------------------------document begins ------------------------------
+
+\begin{document}
+
+\title{Module 4: Electrons, Waves, \& Photons}
+\author{}
+\date{}
+
+\begin{frame} %title frame
+\titlepage
+\end{frame}
+
+\begin{frame}{Contents}
+    \tableofcontents[part=1]
+\end{frame}
+
+%---------------------------Electricity---------------------------------------
+\part{Electricity}
+\subfile{Files/4.1.1.current}
+\subfile{Files/4.1.2.voltageresistance}
+\subfile{Files/4.1.3.circuits}
+\subfile{Files/4.1.4.components}
+\subfile{Files/4.1.5.internalresistance}
+\subfile{Files/4.1.6.power}
+\subfile{Files/4.1.7.resistivity}
+
+%----------------------------Waves--------------------------------------------
+\part{Waves}
+\subfile{Files/4.2.1.progressivewaves}
+\subfile{Files/4.2.2.wavegraphs}
+\subfile{Files/4.2.3.electromagneticwaves}
+\subfile{Files/4.2.4.reflectionrefraction}
+\subfile{Files/4.2.5.totalinternalreflection}
+\subfile{Files/4.2.6.interference}
+\subfile{Files/4.2.7.0.diffraction}
+\subfile{Files/4.2.7.1.diffraction2}
+\subfile{Files/4.2.8.stationarywaves}
+\subfile{Files/4.2.9.harmonics}
+
+%-----------------------------Quantum-----------------------------------------
+\part{Quantum}
+\subfile{Files/4.3.1.photons}
+\subfile{Files/4.3.2.photoelectriceffect}
+\subfile{Files/4.3.3.waveparticleduality}
+\subfile{Files/4.3.4.photonmomentum}
+
+
+\end{document}
